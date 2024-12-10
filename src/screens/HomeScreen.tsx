@@ -10,15 +10,29 @@ export default function HomeScreen() {
   if (loading)
     return (
       <View>
-        <Text style={{ fontSize: 24, fontWeight: "bold", textAlign: "center" }}>
+        <Text
+          style={{
+            fontSize: 24,
+            fontWeight: "bold",
+            textAlign: "center",
+            margin: 10,
+          }}
+        >
           Cargando películas
         </Text>
       </View>
     );
-    //He dejado el botón de siguiente página para que haya dos maneras de pasar de página
+  //He dejado el botón de siguiente página para que haya dos maneras de pasar de página
   return (
     <View>
-      <Text style={{ fontSize: 24, fontWeight: "bold", textAlign: "center" }}>
+      <Text
+        style={{
+          fontSize: 24,
+          fontWeight: "bold",
+          textAlign: "center",
+          margin: 10,
+        }}
+      >
         Películas (Página {nowPlaying.page})
       </Text>
       <Slider movies={nowPlaying.movies} height={100} onEndReached={nextPage} />
