@@ -1,13 +1,8 @@
-import { Config } from "../config/Config";
-import { Movie } from "../config/entities/Movie";
 import ResultMovie from "../config/entities/ResultMovie";
-import { movieMapper } from "../config/mapper/movieMapper";
 import { resultMovieMapper } from "../config/mapper/resultMovieMapper";
-import { Result } from "../config/Responses/dataMovies";
 import { HttpError } from "./http/HttpError";
-import { HttpFactory } from "./http/HttpFactory";
 import { HttpFactory2 } from "./http/HttpFactory2";
-import { HttpFetch } from "./http/HttpFetch";
+
 
 interface DataMovieRequest {
   total: number;
